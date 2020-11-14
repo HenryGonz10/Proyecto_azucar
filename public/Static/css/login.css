@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Sans Pro SemiBold';
+    src: url(/Static/fuentes/SourceSansPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Sans Pro Regular';
+    src: url(/Static/fuentes/SourceSansPro-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/Static/img/fondologin.JPG) no-repeat;
+    background-size: cover;
+    font-family: 'Sans Pro Regular';
+    color: #fff;
+}
+
+#login-box {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 451px;
+    height: 599px;
+    background: #fff;
+    color: #8F9BB0;
+    border-radius: 10px;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-55%, -50%);
+    box-sizing: border-box;
+}
+
+#login-box img {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: block;
+    margin: auto;
+}
+
+#login-box h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#olvi {
+    font-family: 'Sans Pro Regular';
+    font-size: 16px;
+    padding-top: 37%;
+    padding-left: 37%;
+}
+
+#copi {
+    font-family: 'Sans Pro Regular';
+    font-size: 18px;
+    padding-left: 7%;
+    padding-top: 2%;
+}
+
+#ati {
+    color: #72BC00;
+}
+
+.campos {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 40px;
+}
+
+#check {
+    display: inline-block;
+}
+
+#but_enviar {
+    margin: auto;
+    display: block;
+    width: 132px;
+    height: 38px;
+    margin-top: 40px;
+    background: #72BC00;
+    color: #fff;
+}
+
+#bienvenido {
+    font-family: 'Sans Pro SemiBold';
+    font-size: 25px;
+    padding-top: 2%;
+    padding-left: 45%;
+}
+
+#logocab {
+    padding-top: 23px;
+    font-family: 'Sans Pro SemiBold';
+    font-size: 18px;
+    padding-left: 330px;
+}
