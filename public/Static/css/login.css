@@ -8,13 +8,30 @@
     src: url(/Static/fuentes/SourceSansPro-Regular.ttf);
 }
 
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: url(/Static/img/fondologin.JPG) no-repeat;
-    background-size: cover;
     font-family: 'Sans Pro Regular';
     color: #fff;
+    background: url(/Static/img/fondologin.JPG) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: blur(2.5px);
 }
 
 #login-box {

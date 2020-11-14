@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('../layouts/base');
+    return view('../layouts/base_login');
 });

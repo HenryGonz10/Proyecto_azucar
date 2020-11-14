@@ -13,9 +13,9 @@
         <hr>
     </div>
 
-    <ul class="list-unstyled components" id=>
+    <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
