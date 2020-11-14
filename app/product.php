@@ -8,7 +8,7 @@ class product extends Model
 {
     public function presentation()
     {
-        return $this->hasOne(product::class);
+        return $this->hasOne(presentation::class);
     }
     /**
      * The attributes that are mass assignable.
