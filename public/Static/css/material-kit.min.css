@@ -25,6 +25,23 @@
     font-size: .875rem
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+@font-face {
+    font-family: 'Sans Pro SemiBold';
+    src: url(/Static/fuentes/SourceSansPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Sans Pro Regular';
+    src: url(/Static/fuentes/SourceSansPro-Regular.ttf);
+}
+
 .wrapper {
     display: flex;
     width: 100%;

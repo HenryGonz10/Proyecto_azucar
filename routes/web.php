@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::group(['middleware' => ['role:cliente']], function () {
     //rutas accesibles solo para clientes
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

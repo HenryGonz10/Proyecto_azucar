@@ -23,17 +23,6 @@ footer {
     height: 40px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Sans Pro Regular';
-    color: #fff;
-    background: url(/Static/img/fondologin.JPG) no-repeat;
-    background-size: cover;
-    height: 100vh;
-    backdrop-filter: blur(2.5px);
-}
-
 #login-box {
     padding-left: 40px;
     padding-right: 40px;
