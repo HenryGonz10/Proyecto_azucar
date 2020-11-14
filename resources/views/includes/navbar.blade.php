@@ -22,7 +22,7 @@
                         <a class="dropdown-item" href="#">Perfil</a>
                         <a class="dropdown-item" href="#">Ajustes</a>
                         <hr>
-                        <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                        <a type="button" class="dropdown-item" data-toggle="modal" data-target="#exampleModal">Cerrar Sesión</a>
                     </div>
                 </div>
             </ul>

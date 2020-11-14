@@ -13,18 +13,39 @@
         <hr>
     </div>
 
-    <ul class="navbar-nav text-center my-5">
+    <ul class="navbar-nav my-5">
         <li class="nav-item">
-            <a class="nav-link" href="#"><h4><i class="fas fa-home"></i> Inicio</h4></a>
+            <a class="nav-link" href="#" style="padding-left: 10%"><h4><i class="fas fa-home" style="padding-right: 25%"></i> Inicio</h4></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><h4><i class="fas fa-clipboard-list"></i> Productos</h4></a>
+            <a class="nav-link" href="#" style="padding-left: 10%"><h4><i class="fas fa-clipboard-list" style="padding-right: 22%"></i>Produccion</h4></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><h4><i class="fas fa-shopping-cart"></i> Pedidos</h4></a>
+            <a class="nav-link" href="#" style="padding-left: 10%"><h4><i class="fas fa-shopping-cart" style="padding-right: 21%"></i> Pedidos</h4></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><h4><i class="fas fa-cubes"></i> Productos</h4></a>
+            <a class="nav-link" href="#" style="padding-left: 10%"><h4><i class="fas fa-cubes" style="padding-right: 20%"></i> Productos</h4></a>
         </li>
     </ul>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ¿Desea cerrar sesión?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <a  href="{% url 'logout' %}" class="btn btn-danger">Si</a>
+        </div>
+      </div>
+    </div>
+  </div>
