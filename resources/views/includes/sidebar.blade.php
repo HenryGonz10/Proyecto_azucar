@@ -44,8 +44,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-          <a  href="{% url 'logout' %}" class="btn btn-danger">Si</a>
+          <a  href="{{ route('logout') }}" class="btn btn-danger">Si</a>
         </div>
       </div>
     </div>
-  </div>
+</div>
+
+<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+  @csrf
+</form>

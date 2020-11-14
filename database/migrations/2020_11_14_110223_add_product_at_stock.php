@@ -29,6 +29,12 @@ class AddProductAtStock extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('stock_product', function(Blueprint $table){
+            $table->BigInteger('id_producto')->unsigned()->nullable()->after('id');
+
+            $table->foreign('id_producto')->references('id')->on('product')
+            ->onDelete('set null')
+            ->onUpdate('cascade');
+        });
     }
 }

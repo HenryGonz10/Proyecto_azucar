@@ -8,7 +8,7 @@
                             <div class="media align-items-center">
                                 <div class="media-body ml-2 d-none d-lg-block ">
                                     <span class="mb-0 text-sm  font-weight-bold">
-                                     User<br><p>Adminsitrador</p>
+                                        {{ Auth::user()->name }}<br><p>Adminsitrador</p>
                                     </span>
                                 </div>
                                 <span class="avatar avatar-sm rounded-circle ml-2">

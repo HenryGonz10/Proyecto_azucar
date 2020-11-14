@@ -31,6 +31,14 @@ class AddPresentationAtProduct extends Migration
      */
     public function down()
     {
+        Schema::table('product', function(Blueprint $table){
+            $table->integer('cantidad')->default(0)->unsigned()->after('precio');
+            $table->BigInteger('id_presentation')->unsigned()
+            ->nullable()->after('cantidad');
 
+            $table->foreign('id_presentation')->references('id')->on('presentation')
+            ->onDelete('set null')
+            ->onUpdate('cascade');
+        });
     }
 }
