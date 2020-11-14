@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('../layouts/base');
 });
+
+Route::group(['middleware' => ['role:cliente']], function () {
+    //rutas accesibles solo para clientes
+});
