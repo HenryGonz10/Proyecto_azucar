@@ -21,6 +21,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Perfil</a>
                         <a class="dropdown-item" href="#">Ajustes</a>
+                        <hr>
                         <a class="dropdown-item" href="#">Cerrar Sesión</a>
                     </div>
                 </div>
