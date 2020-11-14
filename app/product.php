@@ -8,16 +8,15 @@ class product extends Model
 {
     public function presentation()
     {
-        return $this->hasMany('App\presentation');
+        return $this->hasOne(product::class);
     }
-
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nombre', 'precio',
     ];
 
     /**
@@ -26,7 +25,7 @@ class product extends Model
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+
     ];
 
     /**
@@ -35,6 +34,6 @@ class product extends Model
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+
     ];
 }

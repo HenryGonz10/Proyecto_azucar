@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePresentatioTable extends Migration
+class AddProductAtStock extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreatePresentatioTable extends Migration
      */
     public function up()
     {
-        Schema::create('presentatio', function (Blueprint $table) {
-            $table->id();
-            $table->string('nombre');
-            $table->string('abr');
-            $table->timestamps();
+        Schema::table('stock_product', function(Blueprint $table){
+            $table->BigInteger('id_producto')->unsigned()->nullable()->after('id');
+
+            $table->foreign('id_producto')->references('id')->on('product')
+            ->onDelete('set null')
+            ->onUpdate('cascade');
         });
     }
 
@@ -28,6 +29,6 @@ class CreatePresentatioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('presentatio');
+        //
     }
 }

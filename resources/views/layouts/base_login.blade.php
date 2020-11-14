@@ -24,7 +24,7 @@
     @include('includes.navbar_login')
 
     <div style="display:flex; justify-content: center; align-items:center;">
-        <div class="col-lg-3 col-md-3 col-sm-3 vertical-center">
+        <div class="col-lg-3 col-md-5 col-sm-5 vertical-center">
             <div class="card bg-white" style="display:flex; justify-content: center; align-items:center;">
                 <div class="card-header bg-white">
                     <img id="logo" src="{{ asset('/Static/img/logo.png') }}" alt="logo de empresa">

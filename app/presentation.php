@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class presentation extends Model
 {
+    public function presentation()
+    {
+        return $this->hasMany(product::class);
+    }
     /**
      * The attributes that are mass assignable.
      *
